@@ -59,7 +59,7 @@ int lsh_cd(char **args)
 int lsh_help(char **args)
 {
   int i;
-  printf("Fimsh LSH\n");
+  printf("Fimsh LSH - The fishiest LSH\n");
   printf("Type program names and arguments, and hit enter.\n");
   printf("The following are built in:\n");
 
@@ -223,7 +223,7 @@ void lsh_loop(void)
   int status;
 
   do {
-    printf("> ");
+    printf("><> ");
     line = lsh_read_line();
     args = lsh_split_line(line);
     status = lsh_execute(args);
